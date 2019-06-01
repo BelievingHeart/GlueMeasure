@@ -288,14 +288,14 @@ namespace MainAPP
             var line = DataLogger.FormatOutputLine(runResult, itemIndex, blockOutputValues,
                 _blockOutputNames.IndexOf("ZhaiXia"));
 
-//            try
-//            {
+            try
+            {
                 csvFile = _dataLogger.WriteLine(line);
-//            }
-//            catch
-//            {
-//                MessageBox.Show("请先关闭CCD软件产生的所有文档");
-//            }
+            }
+            catch
+            {
+                MessageBox.Show("请先关闭CCD软件产生的所有文档");
+            }
 
             removeOutdatedFiles(_logDir);
         }

@@ -27,6 +27,7 @@ namespace I2Helper
             WindowState = FormWindowState.Minimized;
             FormBorderStyle = FormBorderStyle.SizableToolWindow;
             ShowInTaskbar = false;
+            ControlBox = false;
 
             InitProcessName();
             InitExecutablePath();
